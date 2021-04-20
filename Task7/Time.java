@@ -1,11 +1,20 @@
 package SS6.Task7;
 
+import java.util.Scanner;
+
 public class Time {
     private byte hours, minutes;
 
     public Time(byte hours, byte minutes) {
         this.hours = hours;
         this.minutes = minutes;
+    }
+
+    public Time() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter departure time (hh mm):");
+        this.hours = scan.nextByte();
+        this.minutes = scan.nextByte();
     }
 
     public byte getHours() {
