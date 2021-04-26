@@ -22,6 +22,31 @@ public class MainAnimal {
         System.out.println("luong thuc an cho 1 lan la:");
         int m = scan.nextInt();
         a1.eat(m1,m);
-        a1.HaveBaby("hihi");
+        System.out.println("tao gia 1 con thu moi:");
+        System.out.println("1. Bird");
+        System.out.println("2. Fish");
+        System.out.println("3. Tiger");
+        System.out.println("Moi ban chon:");
+        int i = scan.nextInt();
+        if(i==1){
+            Bird b2 = new Bird();
+            System.out.println("Moi ban nhap ten cho con thu moi:");
+            String name = scan.nextLine();
+            b2.HaveBaby(name);
+            b2.fly();
+        }else if (i==2){
+            Fish f2 = new Fish();
+            System.out.println("Moi ban nhap ten cho con thu moi:");
+            String name = scan.nextLine();
+            f2.HaveBaby(name);
+            f2.swim();
+            f2.dive();
+        }else{
+            Tiger t2 = new Tiger();
+            System.out.println("Moi ban nhap ten cho con thu moi:");
+            String name = scan.nextLine();
+            t2.HaveBaby(name);
+            t2.run(20);
+        }
     }
 }

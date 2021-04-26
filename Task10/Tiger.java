@@ -5,6 +5,9 @@ public class Tiger extends Animal{
         super(name);
     }
 
+    public Tiger() {
+    }
+
     public void run(int speed){
         System.out.println("con ho:"+ super.getName()
                 +" chay voi toc do: "+speed + "km\\h");

@@ -5,6 +5,9 @@ public class Fish extends Animal{
         super(name);
     }
 
+    public Fish() {
+    }
+
     public void swim(){
         System.out.println("con ca:"+ super.getName()+" boi rat xa!");
     }

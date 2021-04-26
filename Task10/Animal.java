@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Animal extends Food{
     private String name;
     private Food food;
-
+    Scanner scan = new Scanner(System.in);
     public Animal(String name) {
         this.name = name;
         System.out.println("Ten con vat moi la:" + name);
@@ -13,6 +13,9 @@ public class Animal extends Food{
 
     public Animal(Food food) {
         this.food = food;
+    }
+
+    public Animal() {
     }
 
     public String getName() {
@@ -33,10 +36,7 @@ public class Animal extends Food{
         System.out.println(getFood());
     }
     public void HaveBaby(String name){
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Nhap ten con vat moi sinh:");
-        name = scan.nextLine();
-        Animal a = new Animal(name);
+        System.out.println("ban da tao ra 1 con vat moi teen la: "+ name);
     }
     public void ScanInfo(){
 
